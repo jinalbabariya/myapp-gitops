@@ -19,7 +19,7 @@ spec:
       source:
         repoURL: https://github.com/jinalbabariya/myapp-gitops
         targetRevision: main
-        path: "myapp-gitops/environments/{{env}}"
+        path: "environments/{{env}}"
       destination:
         server: https://kubernetes.default.svc
         namespace: "{{env}}"
