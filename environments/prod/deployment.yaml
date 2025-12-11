@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-world-prod
-        image: ghcr.io/jinalbabariya/myapp:latest
+        image: ghcr.io/jinalbabariya/myapp:4d4d0fcfedd668549fd10be8b3042c1e6192e060
         ports:
         - containerPort: 8080
