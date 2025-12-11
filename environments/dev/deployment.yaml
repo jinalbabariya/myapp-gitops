@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-world-dev
-        image: ghcr.io/jinalbabariya/hello-world-dev:latest
+        image: ghcr.io/jinalbabariya/myapp:latest
         ports:
         - containerPort: 8080
