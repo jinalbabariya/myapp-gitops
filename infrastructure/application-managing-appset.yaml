@@ -3,12 +3,16 @@ kind: Application
 metadata:
   name: apps-manager
   namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
     repoURL: 'https://github.com/jinalbabariya/myapp-gitops'
     targetRevision: HEAD
     path: application-set.yaml
+    directory:
+      recurse: true
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: argocd
