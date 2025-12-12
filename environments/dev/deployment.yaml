@@ -17,3 +17,5 @@ spec:
         image: ghcr.io/jinalbabariya/myapp:ea072188400975e26acfb8b01c888be7caeae63f
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+        - name: ghcr
